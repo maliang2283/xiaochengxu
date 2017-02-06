@@ -1,0 +1,12 @@
+<view class='body'>
+    <view class='cell' wx:for="{{roomList}}">
+        <view class='cell-topview'>
+            <image class='cell-topview-icon' src="{{item.room_src}}"/>
+            <view class='cell-topview-maskview'>
+                <text class='cell-topview-maskview-left'>{{item.nickname}}</text>
+                <text class='cell-topview-maskview-right'>{{item.online}}</text>
+            </view>
+        </view>
+        <text class='cell-title'>{{item.room_name}}</text>
+    </view>
+</view>
